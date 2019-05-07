@@ -11,7 +11,6 @@ import React from "react";
 import {
   registerComponent,
   Components,
-  Loading,
   withCurrentUser
 } from "meteor/vulcan:core";
 import { FormattedMessage, intlShape } from "meteor/vulcan:i18n";
@@ -51,7 +50,7 @@ const CollectionItemDetails = ({
   classes
 }) => {
   return loading ? (
-    <Loading />
+    <Components.Loading />
   ) : (
     <div>
       <Grid container className={classes.headerWrapper}>
